@@ -8,6 +8,8 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import frc.robot.rylansClass;
+import frc.robot.OperatorInterface;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -17,13 +19,15 @@ import edu.wpi.first.wpilibj.TimedRobot;
  * project.
  */
 public class Robot extends TimedRobot {
+  public OperatorInterface oi = new OperatorInterface();
+  public rylansClass rC = new rylansClass();
   /**
    * This function is run when the robot is first started up and should be
    * used for any initialization code.
    */
   @Override
   public void robotInit() {
-
+    rC.init(oi);
   }
 
 
@@ -43,7 +47,6 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousPeriodic() {
   
-  
   }
 
   /**
@@ -51,6 +54,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopInit() {
+
   }
 
   /**
@@ -58,13 +62,15 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+    rC.go();
   }
-
+    
   /**
    * This function is called once when the robot is disabled.
    */
   @Override
   public void disabledInit() {
+
   }
 
   /**
@@ -72,6 +78,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void disabledPeriodic() {
+
   }
 
   /**
@@ -79,6 +86,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void testInit() {
+
   }
 
   /**
@@ -86,5 +94,6 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void testPeriodic() {
+    
   }
 }
