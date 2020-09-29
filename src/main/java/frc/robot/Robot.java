@@ -29,6 +29,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotPeriodic() {
+
   }
 
  
@@ -43,7 +44,6 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousPeriodic() {
   
-  
   }
 
   /**
@@ -51,6 +51,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopInit() {
+
   }
 
   /**
@@ -58,6 +59,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+
   }
 
   /**
@@ -65,6 +67,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void disabledInit() {
+
   }
 
   /**
@@ -72,6 +75,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void disabledPeriodic() {
+
   }
 
   /**
@@ -79,6 +83,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void testInit() {
+
   }
 
   /**
@@ -86,5 +91,6 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void testPeriodic() {
+    
   }
 }
