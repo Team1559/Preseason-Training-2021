@@ -101,6 +101,7 @@ public class Robot extends TimedRobot {
   public void testPeriodic() {
     
   }
+  
   public void initialize(){
     if(enableRylansClass && rylansClassenebled == false){
       rC.init(oi);
