@@ -19,6 +19,8 @@ import frc.robot.OperatorInterface;
  * project.
  */
 public class Robot extends TimedRobot {
+  public boolean enableRylansClass = true;
+  public boolean rylansClassenebled = false;
   public OperatorInterface oi = new OperatorInterface();
   public rylansClass rC = new rylansClass();
   /**
@@ -27,7 +29,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-    rC.init(oi);
+
   }
 
 
@@ -63,7 +65,9 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+    if(rylansClassenebled == true){
     rC.go();
+    }
   }
     
   /**
@@ -96,5 +100,11 @@ public class Robot extends TimedRobot {
   @Override
   public void testPeriodic() {
     
+  }
+  public void initialize(){
+    if(enableRylansClass && rylansClassenebled == false){
+      rC.init(oi);
+      rylansClassenebled = true;
+    }
   }
 }
