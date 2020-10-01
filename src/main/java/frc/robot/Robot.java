@@ -8,7 +8,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import frc.robot.rylansClass;
+import frc.robot.RylansClass;
 import frc.robot.OperatorInterface;
 
 /**
@@ -22,7 +22,7 @@ public class Robot extends TimedRobot {
   public boolean enableRylansClass = true;
   public boolean rylansClassenebled = false;
   public OperatorInterface oi = new OperatorInterface();
-  public rylansClass rC = new rylansClass();
+  public RylansClass rC = new RylansClass();
   /**
    * This function is run when the robot is first started up and should be
    * used for any initialization code.
@@ -101,7 +101,7 @@ public class Robot extends TimedRobot {
   public void testPeriodic() {
     
   }
-  
+
   public void initialize(){
     if(enableRylansClass && rylansClassenebled == false){
       rC.init(oi);
