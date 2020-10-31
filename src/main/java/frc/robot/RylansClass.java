@@ -10,7 +10,7 @@ public class RylansClass{
 public TalonSRX motor1 = new TalonSRX(Wiring.motor1);
 private OperatorInterface oi;
 
-    public void init(OperatorInterface oP){//This is an init method, you should include it in every class you make it allows us to debug subsystems and ron the robot without certain subsystems
+    public void init(OperatorInterface oP){//This is an init method, you should include it in every class you make. It allows us to debug subsystems and ron the robot without certain subsystems
         oi = oP;
         motor1.set(TalonSRXControlMode.PercentOutput, 0.0);
     }
